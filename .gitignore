@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+
+# Brightway / ecoinvent data -- NEVER commit this (licensed, and lives
+# outside the repo anyway at ~/ecoinvent_data/, but guard against it being
+# pointed here by mistake)
+brightway_projects/
+data/ecoinvent_raw/
+*.spold
+*.spold.xml
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Claude Code local config -- contains this machine's absolute home
+# directory path (data-isolation deny rules), not relevant to other
+# contributors and not meant for public distribution
+.claude/
